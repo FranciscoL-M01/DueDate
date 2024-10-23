@@ -1,3 +1,7 @@
 # Testing code
-
 components/
+
+node_modules/
+
+/package-lock.json
+/package.json

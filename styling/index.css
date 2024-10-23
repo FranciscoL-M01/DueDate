@@ -90,12 +90,10 @@ body {
         display: flex;
         flex-direction: row;
         font-size: 1.5rem;
-        margin-left: 2rem;
-        margin: 0;
+        margin: 0 1rem;
         padding: 0;
     }
 }
-
 
 /* Grid */
 
@@ -103,7 +101,20 @@ body {
     display: grid;
 }
 
+.grid--1x2-col-first {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid--1x2-col-list {
+    grid-template-columns: repeat(2, minmax(0, auto));
+}
+
+.grid--1x3-list {
+    grid-template-columns: repeat(3, minmax(0, auto));
+}
+
 @media screen and (min-width: 920px) {
+
     .grid--1x2 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -111,4 +122,225 @@ body {
     .grid--1x3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+}
+
+/* Buttons */
+
+.btn {
+    border: 0;
+}
+
+.btn__menu {
+    color: #f8f9fa;
+}
+
+.btn__add {
+    color: #333;
+    background-color: #fffff0;
+    border-radius: 5px;
+}
+
+/* Side Menu */
+
+.menu-bar {
+    width: 100vw;
+    background-color: #646d74;
+    color: #000;
+}
+
+.menu__links {
+    width: auto;
+}
+
+.menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto;
+}
+
+
+.menu__item {
+    padding: .5rem;
+}
+
+button.menu__item {
+    padding: .5rem;
+}
+
+.icon__menu {
+    margin-left: .5rem;
+    transition: .3s;
+}
+
+.collapsible-expanded .icon__menu {
+    transform: rotate(180deg);
+}
+
+
+@media screen and (min-width: 720px) {
+
+    .menu__item:hover {
+        color: #ddceb3;
+    }
+
+    .menu__container {
+        flex-direction: row;
+    }
+}
+
+/* My Tabs */
+
+.my-tabs {
+    display: none;
+    min-height: 100vh;
+    background-color: red;
+}
+
+.tab-title {
+    margin: 0;
+}
+
+/* Shared Tabs */
+
+.my-shared {
+    display: none;
+    min-height: 100vh;
+    background-color: blue;
+}
+
+.shared-title {
+    margin: 0;
+}
+
+/* Page Title */
+
+.page-title {
+    width: 100vw;
+    height: auto;
+}
+
+.list-title {
+    text-align: center;
+    color: #333;
+    margin: 1.2rem 0;
+}
+
+/* To-do-list */
+
+.to-do-list {
+    background-color: #6a4b20;
+    padding: 1.5rem .5rem;
+    margin: 1rem 0;
+}
+
+.add-item {
+    margin-bottom: 1rem;
+}
+
+.icon-add {
+    margin-left: .5rem;
+}
+
+.list-task {
+    margin: 0;
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: #e1c699;
+}
+
+.task-container {
+    background-color: #fff;
+    margin: .5rem 0;
+    padding: .25rem;
+    border-radius: 5px;
+    border: 1px solid #6a4b20;
+}
+
+.control-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.control-task {
+    margin-bottom: 1rem;
+}
+
+.move-icon {
+    margin: 0;
+    height: auto;
+    align-self: start;
+    justify-self: start;
+}
+
+.task-name {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.name-text {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #333;
+    width: 100%;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.delete-icon {
+    align-self: start;
+    justify-self: end;
+    color: #6a4b20;
+    margin: 0;
+    transition: all .2s;
+}
+
+.delete-icon:hover {
+    color: #ff6242;
+}
+
+.manage-task {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.progress-item {
+    justify-self: start;
+}
+
+.time-item {
+    justify-self: start;
+}
+
+/* Notes */
+
+.notes {
+    background-color: #6a4b20;
+    color: #333;
+    padding: 1rem .5rem;
+    margin: 1rem 0;
+}
+
+.notes-container {
+    background-color: #e1c699;
+    padding: .75rem;
+    border-radius: 10px;
+}
+
+.notes-title {
+    margin: 0;
+    text-align: center;
+}
+
+.notes-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todays-notes {
+    width: 100%;
+    min-height: 5rem;
 }

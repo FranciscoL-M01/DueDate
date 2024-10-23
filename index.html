@@ -24,6 +24,87 @@
         </div>
     </nav>
 
+    <section class="menu-bar">
+        <div class="menu__links grid grid--1x2-col-first">
+            <div class="menu__container">
+                <div id="tabs" class="menu__item btn btn__menu collapsible">My Tabs<i class="fa-solid fa-chevron-down icon__menu"></i></div>
+                <div id="shared" class="menu__item btn btn__menu collapsible">Shared With Me<i class="fa-solid fa-chevron-down icon__menu"></i></div>
+            </div>
+            <div class="menu__container">
+                <a class="menu__item btn btn__menu">Analytics</a>
+                <a class="menu__item btn btn__menu">Completed Tasks</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tabs-expand" class="my-tabs">
+        <h2 class="tab-title">Availalbe Tabs</h2>
+    </section>
+
+    <section id="shared-expand" class="my-shared">
+        <h2 class="shared-title">Shared Lists</h2>
+    </section>
+
+    <section class="page-title">
+        <h2 class="list-title">Today's Tasks</h2>
+    </section>
+
+    <section class="to-do-list">
+        <div class="add-item">
+            <button class="add-task btn btn__add">Add Task<i class="fa-solid fa-square-plus icon-add"></i></button>
+            <button class="add-list btn btn__add">Add List<i class="fa-solid fa-square-plus icon-add"></i></button>
+        </div>
+        <div class="list-task">
+            <div class="task-container">
+                <div class="control-container">
+                    <div class="control-task">
+                        <div class="grid grid--1x3-list">
+                            <div class="move-icon">
+                                <i class="fa-solid fa-grip-vertical"></i>
+                            </div>
+                            <div class="task-name">
+                                <input type="text" class="name-text" placeholder="Task Name...">
+                            </div>
+                            <div class="delete-icon">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-assign">
+                        <div class="manage-task">
+                            <div class="progress-item">
+                                <select name="" id="">
+                                    <option value="not started">Not Started</option>
+                                    <option value="In progress">In Progress</option>
+                                    <option value="Completed">Completed</option>
+                                </select>
+                            </div>
+                            <div class="time-item">
+                                <select name="" id="">
+                                    <option value="none">No Timer</option>
+                                    <option value="five">5 min</option>
+                                    <option value="ten">10 min</option>
+                                    <option value="fifteen">15 min</option>
+                                    <option value="twenty">20 min</option>
+                                    <option value="study">Study</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="notes">
+        <div class="notes-container">
+            <h2 class="notes-title">Notes</h2>
+            <div class="notes-text">
+                <textarea name="notes" id="" class="todays-notes" placeholder="Note Your Progress..."></textarea>
+            </div>
+        </div>
+    </section>
+
     <script src="/js/index.js"></script>
 </body>
 </html>
